@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  background-color: pink;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.navbar {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+
+  list-style: none;
+  height: 20%;
+  width: 100vw;
+  background-color: red;
+
+  text-align: center;
+  overflow: hidden;
+}
+.list a {
+  color: #e7e8a5;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.list::before {
+  content: "";
+  width: 180px;
+  height: 4px;
+  background-color: #e7e8a5;
+  left: 0;
+  top: 52%;
+  color: white;
+  position: absolute;
+  opacity: 1;
+}
+
+.list:nth-of-type(1) {
+  background-color: #0f371d;
+}
+.list:nth-of-type(2) {
+  background-color: #235a21;
+}
+.list:nth-of-type(3) {
+  background-color: #3f7963;
+}
+.list:nth-of-type(4) {
+  background-color: #316638;
+}
+.list:nth-of-type(5) {
+  background-color: #61a08b;
+}
